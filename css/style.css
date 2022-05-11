@@ -201,6 +201,11 @@ footer::after {
 
   .temp__wrapper {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .city {
+    text-align: center;
   }
 }
 

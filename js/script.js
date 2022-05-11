@@ -23,15 +23,7 @@ const getWeather = async (query) => {
   return _transformWeather(res);
 };
 
-const days = [
-  "Sanday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+const days = ["San", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 const _transformWeather = (data) => {
   const temp = data.main.temp;
