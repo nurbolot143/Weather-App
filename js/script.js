@@ -1,4 +1,3 @@
-// const cityName = "London";
 const _apiKey = "3d1d6b9619dbbc96836b1983191a406b";
 const _apeBase = "https://api.openweathermap.org/data/2.5/weather?q";
 const unit = "metric";
@@ -30,6 +29,7 @@ const _transformWeather = (data) => {
   const weatherDescription = data.weather[0].description;
   const city = data.name;
   const icon = data.weather[0].icon;
+
   const date = new Date((data.dt + data.timezone - 10800) * 1000);
   const today = days[date.getDay()];
   const currentDate = String(date).slice(4, 15);
